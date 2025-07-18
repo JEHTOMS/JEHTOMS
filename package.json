@@ -1,0 +1,20 @@
+{
+  "name": "naija-rentals",
+  "version": "1.0.0",
+  "description": "House rental platform for Nigerians",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["rental", "nigeria", "real-estate", "apartments"],
+  "author": "JEHTOMS",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
